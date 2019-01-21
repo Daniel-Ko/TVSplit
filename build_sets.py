@@ -9,27 +9,19 @@ import send2trash
 
 from sklearn.model_selection import train_test_split
 
-ORIGINAL_DATA_PATH: str = 
-
-
-TRAIN_DATA_PATH = 
-VALID_DATA_PATH 
-TEST_DATA_PATH 
-
-
 N_TRAIN: int, N_VALID: int = 3600, 901
 
 class Splitter:
-    self._original_datapath   = Path().resolve() / "data" / "orig_data" 
-    self._training_datapath   = Path().resolve() / "data" / "train_data"
-    self._validation_datapath = Path().resolve() / "data" / "validation_data"
-    self._test_datapath       = Path().resolve() / "data" / "test_data"
+    self._original_datapath: Path   = Path().resolve() / "data" / "orig_data" 
+    self._training_datapath: Path   = Path().resolve() / "data" / "train_data"
+    self._validation_datapath: Path = Path().resolve() / "data" / "validation_data"
+    self._test_datapath: Path       = Path().resolve() / "data" / "test_data"
 
     def __init__(self, o_path=self._original_datapath, 
     train_path=self._training_datapath, 
     valid_path=self._validation_datapath, 
     test_path=self._test_datapath):
-        
+        ...
 
 """ Deterministically recreate the training and validation sets from the original source.
     
